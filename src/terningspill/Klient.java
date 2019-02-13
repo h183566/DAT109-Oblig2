@@ -11,7 +11,6 @@ public class Klient {
 		ts.spill();
 		ts.finnVinner();
 		
-		System.out.println("hei");
 	}	
 		
 	

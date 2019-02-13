@@ -10,9 +10,9 @@ public class Kopp {
 	private List<Terning> terninger = new ArrayList<Terning>();
 
 	
-	public Kopp(Integer id, int sum) {
+	public Kopp(Integer id) {
 		this.id = id;
-		this.sum = sum;
+
 		
 		for (int i = 0; i < 2; i++) {
 			Terning t = new Terning(id);

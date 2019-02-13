@@ -13,7 +13,7 @@ public class Terningspill {
 	
 	public Terningspill(int id) {
 		this.id = id;
-		this.k = k;
+		this.k = new Kopp(id);
 		spillere = new ArrayList<Spiller>();
 	}
 
@@ -27,7 +27,7 @@ public class Terningspill {
 	public void spill() {
 		for (int i = 0; i < spillere.size(); i++) {
 			spillere.get(i).spill(k);   //spill(k) hentet fra Spiller
-			System.out.println("Deltakere av spillet er: " + i);
+			System.out.println("Spiller nr. " + (i+1) + " heter " + spillere.get(i).getNavn());
 		}
 
 			System.out.println("-------------------------------");
@@ -39,7 +39,8 @@ public class Terningspill {
 			.max(Comparator.comparing(Spiller::getVerdi))
 			.orElse(null);
 		
-		System.out.println("\nVinneren av spillet: " + vinner);
+		System.out.println("\nVinneren av spillet: " + vinner.getNavn() +
+				"\nSummen av de to ternignene: " + vinner.getVerdi());
 	}
 	
 	
