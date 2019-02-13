@@ -10,7 +10,8 @@ public class Klient {
 		kjorSpill(ts);
 		ts.spill();
 		ts.finnVinner();
-		//hei
+		
+		System.out.println("hei");
 	}	
 		
 	
