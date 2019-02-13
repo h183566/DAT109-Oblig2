@@ -22,7 +22,7 @@ public class Klient {
 		
 			
 		for (int i = 0; i < input; i++) {
-			System.out.println("\nSkriv inn navnet på spiller: ");
+			System.out.println("Skriv inn navnet på spiller: ");
 			ts.leggTilspiller(scan.nextLine());
 			System.out.println();
 		}
