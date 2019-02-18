@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Terningspill {
 
-	private int id;
+	private int id;    //id til terningspill, id = 1 betyr terningspill nr. 1
 	private Kopp k;
 	private ArrayList<Spiller> spillere = new ArrayList<>();  //ArrayList fordi et ukjent ant. spillere kan spille 
 	

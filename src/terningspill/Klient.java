@@ -7,7 +7,7 @@ public class Klient {
 	public static void main(String[] args) {
 
 		Terningspill ts = new Terningspill(1);
-		kjorSpill(ts);
+		kjorSpill(ts);	
 		ts.spill();
 		ts.finnVinner();
 		
@@ -17,7 +17,7 @@ public class Klient {
 	public static void kjorSpill(Terningspill ts) {
 		Scanner scan = new Scanner(System.in);
 			
-		System.out.println("Skriv antallet spiller: ");	
+		System.out.println("Skriv inn antall spillere: ");	
 		int input = Integer.parseInt(scan.nextLine());
 		
 			
